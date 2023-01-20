@@ -14,7 +14,7 @@ import ResizablePanel from "../components/ResizablePanel";
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [bio, setBio] = useState("");
-  const [vibe, setVibe] = useState<"Professional" | "Casual" | "Funny">(
+  const [vibe, setVibe] = useState<"Professional" | "Casual">(
     "Professional"
   );
   const [generatedBios, setGeneratedBios] = useState<String>("");
@@ -22,8 +22,8 @@ const Home: NextPage = () => {
   console.log("Streamed response: ", generatedBios);
 
   const prompt =
-    vibe === "Funny"
-      ? `Rewrite ""${bio}""`
+    vibe === "Casual"
+      ? `Rewrite ""${bio}"" in casual tone`
       : `Rewrite ""${bio}""`;
 
   const generateBio = async (e: any) => {
