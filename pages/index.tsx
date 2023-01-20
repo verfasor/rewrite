@@ -108,21 +108,12 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Twitter Generator</title>
+        <title>rewrite.sh: A fast and simple rewriter powered by AI.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
-        <a
-          className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mb-5"
-          href="https://github.com/Nutlope/twitterbio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Github />
-          <p>Star on GitHub</p>
-        </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
           Rewrite any text in seconds
         </h1>
@@ -150,7 +141,7 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g.  perfect pangram contains every letter of the alphabet only once and can be considered an anagram of the alphabet. The only perfect pangrams of the English alphabet that are known use abbreviations or other non-dictionary words, such as 'Mr Jock, TV quiz PhD, bags few lynx', or use words so obscure that the phrase is hard to understand,"
+              "e.g.  The only perfect pangrams of the English alphabet that are known use abbreviations or other non-dictionary words, such as 'Mr Jock, TV quiz PhD, bags few lynx', or use words so obscure that the phrase is hard to understand,"
             }
           />
           <div className="flex mb-5 items-center space-x-3">
