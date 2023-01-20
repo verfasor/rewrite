@@ -23,10 +23,10 @@ const Home: NextPage = () => {
 
   const prompt =
     vibe === "Funny"
-      ? `Rewrite the text shared. Make sure each generated content is at max 400 words and base it on this context: ${bio}${
+      ? `Rewrite: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`
-      : `Rewrite the text shared. Make sure each generated content is at max 400 words and base it on this context: ${bio}${
+      : `Rewrite: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`;
 
