@@ -23,8 +23,8 @@ const Home: NextPage = () => {
 
   const prompt =
     vibe === "Funny"
-      ? `Rewrite "${bio}"`
-      : `Rewrite "${bio}"`;
+      ? `Rewrite ""${bio}""`
+      : `Rewrite ""${bio}""`;
 
   const generateBio = async (e: any) => {
     e.preventDefault();
@@ -124,9 +124,9 @@ const Home: NextPage = () => {
           <p>Star on GitHub</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Generate your next Twitter bio in seconds
+          Rewrite any text in seconds
         </h1>
-        <p className="text-slate-500 mt-5">18,167 bios generated so far.</p>
+        <p className="text-slate-500 mt-5">10,000 lines rewritten so far.</p>
         <div className="max-w-xl">
           <div className="flex mt-10 items-center space-x-3">
             <Image
@@ -137,9 +137,9 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Copy your current bio{" "}
+              Copy the text you want to rewrite{" "}
               <span className="text-slate-500">
-                (or write a few sentences about yourself)
+                (or write it here itself)
               </span>
               .
             </p>
@@ -150,7 +150,7 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g. Senior Developer Advocate @vercel. Tweeting about web development, AI, and React / Next.js. Writing nutlope.substack.com."
+              "e.g.  perfect pangram contains every letter of the alphabet only once and can be considered an anagram of the alphabet. The only perfect pangrams of the English alphabet that are known use abbreviations or other non-dictionary words, such as 'Mr Jock, TV quiz PhD, bags few lynx', or use words so obscure that the phrase is hard to understand,"
             }
           />
           <div className="flex mb-5 items-center space-x-3">
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
               onClick={(e) => generateBio(e)}
             >
-              Generate your bio &rarr;
+              Rewrite your text &rarr;
             </button>
           )}
           {loading && (
@@ -191,7 +191,7 @@ const Home: NextPage = () => {
                 <>
                   <div>
                     <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
-                      Your generated bios
+                      Rewritten text
                     </h2>
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
@@ -204,7 +204,7 @@ const Home: NextPage = () => {
                             className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border"
                             onClick={() => {
                               navigator.clipboard.writeText(generatedBio);
-                              toast("Bio copied to clipboard", {
+                              toast("Text copied to clipboard", {
                                 icon: "✂️",
                               });
                             }}
