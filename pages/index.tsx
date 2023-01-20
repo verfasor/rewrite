@@ -117,7 +117,7 @@ const Home: NextPage = () => {
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
           Rewrite any text in seconds using AI
         </h1>
-        <p className="text-slate-500 mt-5">10,000+ lines rewritten so far</p>
+        <p className="text-slate-500 mt-5">Inactive now, please check back later.</p>
         <div className="max-w-xl">
           <div className="flex mt-10 items-center space-x-3">
             <Image
