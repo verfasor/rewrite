@@ -2,6 +2,8 @@
 
 This project rewrites any paragraph for you using AI. A modded version of twitterbio.com by [Hassan El Mghari](https://github.com/Nutlope) at Vercel. The demo linked in the website section of the repo may not work, it's automated by Vercel.
 
+I do not plan to maintain this project. So please fork and do your thing instead of raising issues. 
+
 ## How it works
 
 This project uses the [OpenAI GPT-3 API](https://openai.com/api/) (specifically, text-davinci-003) and [Vercel Edge functions](https://vercel.com/features/edge-functions) with streaming. It constructs a prompt based on the form and user input, sends it to the GPT-3 API via a Vercel Edge function, then streams the response back to the application.
