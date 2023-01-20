@@ -23,8 +23,8 @@ const Home: NextPage = () => {
 
   const prompt =
     vibe === "Funny"
-      ? `Rewrite: ${bio}`
-      : `Rewrite: ${bio}`;
+      ? `Rewrite "${bio}"`
+      : `Rewrite "${bio}"`;
 
   const generateBio = async (e: any) => {
     e.preventDefault();
