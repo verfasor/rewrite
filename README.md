@@ -1,6 +1,6 @@
 # AI Rewriter
 
-This project rewrites any paragraph for you using AI.
+This project rewrites any paragraph for you using AI. A modded version of twitterbio.com by [Hassan El Mghari](https://github.com/Nutlope) at Vercel.
 
 ## How it works
 
